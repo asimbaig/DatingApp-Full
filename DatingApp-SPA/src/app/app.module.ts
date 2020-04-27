@@ -1,3 +1,4 @@
+// import "@angular/compiler";
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
@@ -5,6 +6,7 @@ import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {BsDropdownModule} from 'ngx-bootstrap/dropdown';
 import {BsDatepickerModule} from 'ngx-bootstrap/datepicker';
 import { TabsModule } from 'ngx-bootstrap/tabs';
+import {TimeAgoPipe} from 'time-ago-pipe';
 
 import {RouterModule} from '@angular/router';
 
@@ -44,6 +46,7 @@ export function tokenGetter()
       ValuesComponent,
       NavComponent,
       HomeComponent,
+      // TimeAgoPipe,
       RegisterComponent,
       MemberListComponent,
       MemberDetailsComponent,
